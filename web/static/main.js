@@ -104,7 +104,7 @@ $(function(){
 	var aaa = new dragUpload({
 		dragBox : '#upLoadBut',
 		showImg : '#showImg',
-		fileSize : 500,
+		fileSize : 2048,
 		strRegExp : /(image)/,
 		activeClass:'comein'
 	});
