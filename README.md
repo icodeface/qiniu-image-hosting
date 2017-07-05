@@ -4,4 +4,4 @@
 * qiniu
 * 前端代码参考自 https://github.com/awarriorer/H5DragImgUpload
 
-![](http://img.codeface.cn/ee64bd4147ec62be76acf174053c80af.png)
+![](http://img.codeface.cn/2c31e972e2b5b57c0ed0a10f2c671f4d.png)
