@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图床</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		.upLoadBut{
+			width: 800px;
+			height: 100px;
+			margin: 50px auto;
+			text-align: center;
+			line-height: 100px;
+			background-color: rgba(255,415,124,0.5);
+		}
+		.showImg{
+			width: 800px;
+			min-height: 200px;
+			margin: 20px auto;
+		}
+
+		.showImg img{
+			width: 25%;
+			float: left;
+		}
+
+		.showImg:after{
+			display: block;
+			clear: both;
+			content: "";
+		}
+		.comein{
+			background-color: cyan;
+		}
+	</style>
+</head>
+<body>
+	
+	<section class="upLoadBut" id="upLoadBut">
+		拖拽图片到这里上传
+	</section>
+
+	<!-- 图片显示区域 -->
+	<section class="showImg" id="showImg">
+		
+	</section>
+
+	<script type="text/javascript" src="{{ url_for('static', filename='jquery-1.8.2.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+
+</body>
+</html>
