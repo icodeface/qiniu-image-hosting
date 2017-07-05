@@ -89,7 +89,9 @@ function dragUpload(obj){
             console.log(json.code)
             console.log(json.url)
             if (json.code == '0') {
-                var $img = $('<img>').attr("src", json.url);
+                var $img = $('<img class="img">').attr(
+                                {"src": json.url,
+                                 "data-clipboard-text": json.url})
          	    $ImgCon.append($img)
             }
         }, 'json').fail(function(){
@@ -101,6 +103,7 @@ function dragUpload(obj){
 //dragUpload end
 
 $(function(){
+    var clipboard = new Clipboard('.img');
 	var aaa = new dragUpload({
 		dragBox : '#upLoadBut',
 		showImg : '#showImg',

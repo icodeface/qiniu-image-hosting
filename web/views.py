@@ -21,7 +21,6 @@ def upload():
     if file and allowed_file(file.filename):
         file_name = secure_filename(file.filename)
         ret, info = push(file, file_name)
-        print(ret)
         return jsonify({
             'code': 0,
             'url': urljoin(DOMAIN, ret.get('key'))

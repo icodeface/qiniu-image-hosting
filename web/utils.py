@@ -14,7 +14,6 @@ q = qiniu.Auth(QINIU_ACCESS_KEY, QINIU_SECRET_KEY)
 def push(file, file_name):
     suffix = os.path.splitext(file_name)[1]
     key = generate_name()+suffix
-    print(key)
     token = q.upload_token(BUCKET_NAME, key, 3600)
     ret, info = qiniu.put_data(token, key, file)
     return ret, info
