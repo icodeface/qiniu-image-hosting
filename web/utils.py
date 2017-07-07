@@ -7,6 +7,8 @@ import hashlib
 import qiniu
 from config import QINIU_ACCESS_KEY, QINIU_SECRET_KEY, ALLOWED_EXTENSIONS, BUCKET_NAME
 import time
+import random
+import string
 
 q = qiniu.Auth(QINIU_ACCESS_KEY, QINIU_SECRET_KEY)
 
@@ -21,7 +23,7 @@ def push(file, file_name):
 
 def generate_name():
     m = hashlib.md5()
-    t = str(time.time())
+    t = str(time.time()) + ''.join(random.choice(string.ascii_letters) for _ in range(4))
     m.update(t.encode())
     return m.hexdigest()
 
