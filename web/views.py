@@ -19,8 +19,8 @@ def index():
 def upload():
     file = request.files['file']
     if file and allowed_file(file.filename):
-        file_name = secure_filename(file.filename)
-        ret, info = push(file, file_name)
+        # file_name = exi(file.filename)
+        ret, info = push(file, file.filename)
         return jsonify({
             'code': 0,
             'url': urljoin(DOMAIN, ret.get('key'))
