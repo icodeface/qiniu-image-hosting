@@ -12,7 +12,7 @@ function dragUpload(obj){
 		JdragBox    = $dragBox[0],//原生对象
 		$ImgCon     = $(obj.showImg),//显示区域
 		activeClass = obj.activeClass,
-		maxSize     = obj.fileSize || 500,
+		maxSize     = obj.fileSize || 2048,
 		reg         = obj.strRegExp || /[*]/;
 
 	//阻止浏览器默认行。 
