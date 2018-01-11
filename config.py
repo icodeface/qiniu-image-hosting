@@ -7,8 +7,10 @@ DEBUG = True
 LOG_FILE = "app.log"
 MAX_CONTENT_LENGTH = 16 * 1024 * 1024
 ALLOWED_EXTENSIONS = {('txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif')}
-DOMAIN = 'http://img.codeface.cn/'
+DOMAIN = 'https://www.baidu.com/'
 
+PREFIX = 'upload/'
 QINIU_ACCESS_KEY = ''
 QINIU_SECRET_KEY = ''
 BUCKET_NAME = ''
+
