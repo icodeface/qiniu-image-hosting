@@ -48,7 +48,7 @@ function dragUpload(obj){
 
     	//如果没有文件，直接结束方法
     	if( fileList.length == 0 ){
-    		return fasle;
+    		return false;
     	}
     	//为每一个file对象添加方法
     	for(var i = 0; i < fileList.length; i++ ){
